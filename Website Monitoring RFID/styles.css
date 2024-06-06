@@ -1,0 +1,244 @@
+/* Resetting some default browser styles */
+body,
+h1,
+h2,
+p,
+table,
+th,
+td,
+button,
+input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style untuk body */
+body {
+  font-family: "Calibri", sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Style untuk container utama */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Style untuk heading 1 dan heading 2 */
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+h4 {
+  text-align: left;
+  margin: 5px;
+  color: #353535;
+}
+
+/* Style untuk wrapper tabel yang bisa di-scroll */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* Style untuk tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* Style untuk header kolom tabel */
+th {
+  background-color: #3498db;
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+}
+
+/* Style untuk sel data di tabel */
+td {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+/* Style untuk grup tombol */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Style untuk tombol refresh dan delete all */
+.btn-refresh,
+.btn-del-all {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Style untuk tombol delete all data */
+.btn-del-all button {
+  padding: 10px 20px;
+  margin: 5px 0;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-del-all button:hover {
+  background-color: #c0392b;
+}
+
+/* Style untuk tombol refresh */
+.btn-refresh button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Style untuk ikon di tombol refresh */
+.btn-refresh button i {
+  margin-left: 8px;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+/* Style untuk efek hover pada tombol refresh */
+.btn-refresh button:hover {
+  background-color: #27ae60;
+}
+
+/* Style untuk animasi putar ikon pada hover tombol refresh */
+.btn-refresh button:hover i {
+  transform: rotate(360deg);
+}
+
+/* Style untuk tombol delete */
+.btn-delete button {
+  background-color: #e74c3c;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+.btn-delete button:hover {
+  background-color: #c0392b;
+}
+
+/* Style untuk tombol edit */
+.btn-edit button {
+  background-color: #3498db;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+.btn-edit button:hover {
+  background-color: #2980b9;
+}
+
+/* Style umum untuk tombol */
+button {
+  padding: 10px 20px;
+  margin: 5px 0;
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+/* Style untuk form */
+form {
+  margin-top: 20px;
+}
+
+/* Style untuk input text */
+input[type="text"] {
+  padding: 10px;
+  width: calc(100% - 22px);
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style untuk area data terakhir */
+#last-data {
+  background-color: #ecf0f1;
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* Style untuk footer */
+footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #ddd;
+}
+
+footer p {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+/* Media query untuk tampilan responsif */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  table {
+    font-size: 14px;
+  }
+  button {
+    width: 100%;
+    padding: 12px;
+  }
+  input[type="text"] {
+    width: 100%;
+  }
+}
